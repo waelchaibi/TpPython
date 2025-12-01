@@ -10,7 +10,7 @@ Installer les bibliothèques nécessaires :
 
     Pour lancer le programme :
     
-    python tp_meteo.py
+    python Tp_wael.py
 
 Résultats générés
 
