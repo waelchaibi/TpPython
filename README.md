@@ -18,8 +18,6 @@ Résultats générés
       
       un rapport dans le terminal
       
-      graphique_temperatures.png
-      
-      graphique_humidite.png
+      graphique_temperatures.png et graphique_humidite.png que tu peux sauvegarder
       
       un fichier rapport.txt
