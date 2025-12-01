@@ -8,7 +8,7 @@ def charger_csv(path):
     df['date'] = pd.to_datetime(df['date'])
     return df
 
-# Quelques statistiques rapides
+#des statistiques générales 
 def stats_meteo(df):
     return df.describe()
 
@@ -18,7 +18,7 @@ def jours_extremes(df):
     froid = df.loc[df['temperature'].idxmin()]
     return chaud, froid
 
-# Graphique simple
+# Graphique 
 def plot_variable(df, colonne, titre):
     plt.figure(figsize=(10,4))
     plt.plot(df['date'], df[colonne], marker='o')
@@ -49,7 +49,7 @@ def meteo_actuelle(ville="Montpellier", lat=43.61, lon=3.87):
     except Exception as e:
         print("Erreur lors de la récupération de la météo :", e)
 
-# Export simple du rapport
+# Export du rapport
 def exporter(df, chaud, froid, fichier="rapport.txt"):
     with open(fichier, "w") as f:
         f.write("Rapport météo\n")
